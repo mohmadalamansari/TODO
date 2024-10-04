@@ -1,0 +1,39 @@
+.toggle-switch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Adjust this value to fit your layout */
+  }
+  
+  .toggle-switch {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .toggle-switch.on {
+    background-color: #4caf50; /* Green color when switch is on */
+  }
+  
+  .toggle-switch.off {
+    background-color: #ccc; /* Gray color when switch is off */
+  }
+  
+  .toggle-switch-inner {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-switch.on .toggle-switch-inner {
+    transform: translateX(30px); /* Move the inner circle to the right when switch is on */
+  }
+  
